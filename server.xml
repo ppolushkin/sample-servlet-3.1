@@ -4,8 +4,10 @@
         <feature>servlet-3.1</feature>
     </featureManager>
 
-    <httpEndpoint id="defaultHttpEndpoint" httpPort="9090" />
+    <httpEndpoint id="defaultHttpEndpoint" httpPort="${httpPort}" />
 
-    <application type="war"  context-root="/" location="C:/Workspace/servlet3/sample-servlet3/target/sample-servlet3-1.0-SNAPSHOT.war"/>
+    <application id="${project.name}" name="${project.name}" type="war" context-root="/" location="${war.path}">
+
+    </application>
 
 </server>
