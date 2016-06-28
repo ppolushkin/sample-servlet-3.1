@@ -1,0 +1,15 @@
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Liberty
+/wlp/
+wlp.properties
+
+# DB logs
+derby.log
+
+swagger.json
