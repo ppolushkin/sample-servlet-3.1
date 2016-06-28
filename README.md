@@ -1,19 +1,17 @@
-sample-servlet3.1
+# sample-servlet3.1
 
+## What is used:
+* https://github.com/maciejwalkowiak/servlet3-maven-archetype
+* https://github.com/WASdev/ci.maven/tree/f8d7f634b1a2ac6753ea7932b6da9347ce1ac073#liberty-maven-plugin
 
-Here is a link for fast servlet3 maven project starting:
- https://github.com/maciejwalkowiak/servlet3-maven-archetype
+## Setup project:
+* download wlp https://developer.ibm.com/wasdev/downloads/liberty-profile-beta/
+* put it to C:/Workspace/wlp
+* setup *WLP_PATH* in your environment variables
 
-Wlp plugin:
- https://github.com/WASdev/ci.maven/tree/f8d7f634b1a2ac6753ea7932b6da9347ce1ac073#liberty-maven-plugin
+## Start server:
+`mvn clean package liberty:start-server -P local`
 
-Setup project:
-1. download wlp https://developer.ibm.com/wasdev/downloads/liberty-profile-beta/
-2. put it to C:/Workspace/wlp
-
-Start server:
-    mvn clean package liberty:start-server -P local
-
-Stop server:
-    mvn liberty:stop-server -P local
+## Stop server:
+`mvn liberty:stop-server -P local`
 
